@@ -175,6 +175,7 @@ class HelloController extends Controller
             'email.email' => 'メールアドレスを入力してください',
             'message.required' => 'メッセージを入力してください',
         ];
+        
 		$validator = Validator::make($request->all(), [
             'name' => 'required',
             'subject' => 'required',
